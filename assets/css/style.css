@@ -445,8 +445,20 @@ button {
     margin-bottom: 3px;
 }
 /* Preloader CSS */
+.new-loader {
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: 
+      radial-gradient(farthest-side, var(--blue-dark) 95%,#0000) 50% 1px/12px 12px no-repeat,
+      radial-gradient(farthest-side,#0000 calc(100% - 14px),#ccc 0);
+    animation: new-loader-animation 1s infinite linear;
+}
+  @keyframes new-loader-animation {to{transform: rotate(1turn)}}
+
 .preloader {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
     bottom: 0;
     height: 100vh;
     left: 0;
@@ -471,7 +483,7 @@ button {
     position: relative;
     text-align: center;
 }
-.preloader .pre-box {
+/* .preloader .pre-box {
     width: 50px;
     height: 50px;
     background-image: url("/assets/images/logo/footer-logo-1.png");
@@ -482,14 +494,14 @@ button {
     top: 0;
     left: 0;
     border-radius: 4px;
-}
+} */
 .preloader .pre-shadow { 
-    width: 50px;
+    width: 60px;
     height: 5px;
     background: #000;
     opacity: 0.1;
     position: absolute;
-    top: 59px;
+    top: 70px;
     left: 0;
     border-radius: 50%;
     -webkit-animation: shadow .5s linear infinite;
@@ -1514,14 +1526,14 @@ button {
     margin-bottom: 30px;
 }
 .scroll-more{
-    display: block;
+    /* display: inline-block; */
     font-size: 14px;
     text-align: center;
     line-height: 25px;
     position: absolute;
-    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 0px;
+    transform: translateX(-50%);
 }
 .hero-banner-v2 .hero-img{
     position: relative;
