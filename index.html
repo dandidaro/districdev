@@ -17,7 +17,7 @@
         <!--====== Responsive css ======-->
         <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".main-menu">
         <div class="gradient-body">
             <!--====== Start Preloader ======-->
             <div class="preloader">
@@ -108,32 +108,11 @@
                                                 </li>
                                             </ul>
                                         </li> -->
-                                        <li class="menu-item"><a href="services.html" class="nav-link">Services</a>
-                                            <!-- <ul class="sub-menu">
-                                                <li><a href="services.html">Our Service</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
-                                            </ul> -->
-                                        </li>
-                                        <li class="menu-item"><a href="projects.html" class="nav-link">Works</a>
-                                            <!-- <ul class="sub-menu">
-                                                <li><a href="projects.html">Our Portfolio</a></li>
-                                                <li><a href="project-details.html">Portfolio Details</a></li>
-                                            </ul> -->
-                                        </li>
-                                        <li class="menu-item"><a href="about.html" class="nav-link">About Us</a>
-                                            <!-- <ul class="sub-menu">
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="team.html">Our Team</a></li>
-                                                <li><a href="team-details.html">Team Details</a></li>
-                                            </ul> -->
-                                        </li>
-                                        <!-- <li class="menu-item"><a href="blogs.html" class="nav-link">Blogs</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blogs.html">Our Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <li class="menu-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                                        <li class="menu-item"><a href="#home" class="page-scroll active nav-link">Home</a></li>
+                                        <li class="menu-item"><a href="#services" class="page-scroll nav-link">Services</a></li>
+                                        <li class="menu-item"><a href="#works" class="page-scroll nav-link">Works</a></li>
+                                        <!-- <li class="menu-item"><a href="#about" class="page-scroll nav-link">About Us</a></li> -->
+                                        <li class="menu-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -157,7 +136,7 @@
             <!--====== End Header Section ======-->
             
             <!--====== Start Banner Section ======-->
-            <section class="hero-banner-v2 position-relative z-1">
+            <section class="hero-banner-v2 position-relative z-1" id="home">
                 <div class="shape shape-one"><span><img src="assets/images/hero/hero-two-shape-1.png" alt=""></span></div>
                 <div class="shape shape-two"><span><img src="assets/images/hero/hero-two-shape-2.png" alt=""></span></div>
                 <!-- <div class="shape shape-three"><span><img src="assets/images/hero/hero-two-shape-3.png" alt=""></span></div> -->
@@ -169,7 +148,7 @@
                                 <span class="sub-title wow fadeInUp">This is Distric.</span>
                                 <h1 class="wow fadeInUp" data-wow-delay=".5s">Let's transform and evolve your business through<br/> 
                                     <span class="primary-three">design</span> and <span class="primary-four">digital</span> solutions</h1>
-                                <p class="wow fadeInUp" data-wow-delay="1s">We discuss, design, and develop. You decide.</p>
+                                <p class="wow fadeInUp" data-wow-delay="1s">From Pixel to Perfection!</p>
                                 <a href="about.html" class="main-btn wow fadeInUp" data-wow-delay=".7s">Let Us Show How</a>
                             </div>
                         </div>
@@ -187,7 +166,7 @@
             <!--====== End Banner Section ======-->
             
             <!--====== Start Service Section ======-->
-            <section class="service-area service-area-v1 pt-80 pb-80">
+            <section class="service-area service-area-v1 pt-80 pb-80" id="services">
                 <div class="container">
                     <div class="service-wrapper pt-40 pb-40">
                         <div class="row">
@@ -199,66 +178,60 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 col-sm-12" onclick="location.href='service-details.html'" style="cursor: pointer">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="service-item service-style-two wow fadeInUp" data-wow-delay=".5s">
-                                    <!-- <div class="icon">
-                                        <i class="flaticon-strategy"></i>
-                                    </div> -->
                                     <div class="text">
-                                        <h3 class="title"><a href="service-details.html">Product Design</a></h3>
-                                        <p>We can provide your brand from a new design system to high fidelity prototype</p>
-                                        <!-- <ul class="list-style-two">
-                                            <li>Product Management</li>
-                                            <li>MVP Definition</li>
-                                            <li>Product Strategy</li>
-                                        </ul> -->
-                                        <a href="service-details.html" class="btn-link">More Detail</a>
+                                        <h3 class="title">Product Design</h3>
+                                        <p>Design is our expertise, get ready to explore our design solutions</p>
+                                        <ul class="list-style-two">
+                                            <li>Wireframes</li>
+                                            <li>Lofi to Hifi Design</li>
+                                            <li>Prototype and Mockups</li>
+                                            <li>Design System</li>
+                                        </ul>
+                                        <!-- <a href="service-details.html" class="btn-link">More Detail</a> -->
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12" onclick="location.href='service-details.html'" style="cursor: pointer">
-                                <div class="service-item service-style-two wow fadeInUp" data-wow-delay=".7s">
-                                    <!-- <div class="icon">
-                                        <i class="flaticon-strategy"></i>
-                                    </div> -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service-item service-style-two wow fadeInUp" data-wow-delay=".5s">
                                     <div class="text">
-                                        <h3 class="title"><a href="service-details.html">Product Development</a></h3>
-                                        <p>We can provide your brand from a new design system to high fidelity prototype</p>
-                                        <!-- <ul class="list-style-two">
-                                            <li>Product Management</li>
-                                            <li>MVP Definition</li>
-                                            <li>Product Strategy</li>
-                                        </ul> -->
-                                        <a href="service-details.html" class="btn-link">More Detail</a>
+                                        <h3 class="title">Product Development</h3>
+                                        <p>Not only design, we can also develop and make your brand online to the internet</p>
+                                        <ul class="list-style-two">
+                                            <li>Front-end Code</li>
+                                            <li>Landing Page</li>
+                                            <li>Static Website</li>
+                                        </ul>
+                                        <!-- <a href="service-details.html" class="btn-link">More Detail</a> -->
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12" onclick="location.href='service-details.html'" style="cursor: pointer">
-                                <div class="service-item service-style-two wow fadeInUp" data-wow-delay=".9s">
-                                    <!-- <div class="icon">
-                                        <i class="flaticon-strategy"></i>
-                                    </div> -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service-item service-style-two wow fadeInUp" data-wow-delay=".5s">
                                     <div class="text">
-                                        <h3 class="title"><a href="service-details.html">Graphic Design</a></h3>
-                                        <p>We can provide your brand from a new design system to high fidelity prototype</p>
-                                        <!-- <ul class="list-style-two">
-                                            <li>Product Management</li>
-                                            <li>MVP Definition</li>
-                                            <li>Product Strategy</li>
-                                        </ul> -->
-                                        <a href="service-details.html" class="btn-link">More Detail</a>
+                                        <h3 class="title">Graphic Design</h3>
+                                        <p>Crave something visually new for your brand? It's your time!</p>
+                                        <ul class="list-style-two">
+                                            <li>Logo Creation</li>
+                                            <li>Brand Identity</li>
+                                            <li>Brand Imagery</li>
+                                            <li>Design Guidelines</li>
+                                        </ul>
+                                        <!-- <a href="service-details.html" class="btn-link">More Detail</a> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row pt-40">
+                        <!-- <div class="row pt-40">
                             <div class="col-lg text-center">
                                 <a href="about.html" class="main-btn wow fadeInUp" data-wow-delay=".7s">See All Services</a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-            </section><!--====== End Service Section ======-->
+            </section>
+            <!--====== End Service Section ======-->
 
             <!--====== Start About Section ======-->
             <!-- <section class="about-area about-area-v2 pt-130">
@@ -295,7 +268,7 @@
             <!--====== End About Section ======-->
             
             <!--====== Start Portfolio Section ======-->
-            <section class="portfolio-area portfolio-area-v2 pt-80">
+            <section class="portfolio-area portfolio-area-v2 pt-80 pb-80" id="works">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -479,84 +452,9 @@
                 </div>
             </section> -->
             <!--====== End Contact Section ======-->
-            
-            <!--====== Start Counter Section ======-->
-            <!-- <section class="counter-area counter-area-v2 pb-90">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-7">
-                            <div class="section-title text-center mb-55 wow fadeInUp">
-                                <h2>Why People’s Like Us</h2>
-                                <p>Professional Design Agency to provide solutions</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="counter-item mb-40 wow fadeInUp" data-wow-delay=".2s">
-                                <div class="icon">
-                                    <i class="flaticon-start-up"></i>
-                                </div>
-                                <div class="text">
-                                    <h2 class="number"><span>256</span>+</h2>
-                                    <p>Project Complate</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="counter-item mb-40 item-active wow fadeInUp" data-wow-delay=".3s">
-                                <div class="icon">
-                                    <i class="flaticon-creativity"></i>
-                                </div>
-                                <div class="text">
-                                    <h2 class="number"><span>783</span>+</h2>
-                                    <p>Project Complate</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="counter-item mb-40 wow fadeInUp" data-wow-delay=".4s">
-                                <div class="icon">
-                                    <i class="flaticon-medal"></i>
-                                </div>
-                                <div class="text">
-                                    <h2 class="number"><span>97</span>+</h2>
-                                    <p>Awards Winning</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="counter-item mb-40 wow fadeInUp" data-wow-delay=".5s">
-                                <div class="icon">
-                                    <i class="flaticon-technical-support"></i>
-                                </div>
-                                <div class="text">
-                                    <h2 class="number"><span>35</span>+</h2>
-                                    <p>Years Of Experience</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!--====== End Counter Section ======-->
-
-            <!--====== Start Video Section ======-->
-            <!-- <section class="intro-area intro-area-v1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="play-content bg_cover text-center wow fadeInUp" style="background-image: url(assets/images/video/img-1.jpg);">
-                                <a href="https://www.youtube.com/watch?v=AT6oSIDbGkw" class="video-popup"><i class="fas fa-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!--====== End Video Section ======-->
 
             <!--====== Start Partners Section ======-->
-            <section class="partners-area pt-120">
+            <!-- <section class="partners-area pt-120">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -619,11 +517,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!--====== End Partners Section ======-->
             
             <!--====== Start Testimonial Section ======-->
-            <section class="testimonial-area testimonial-area-v2 pb-135 pt-130">
+            <!-- <section class="testimonial-area testimonial-area-v2 pb-135 pt-130">
                 <div class="container">
                     <div class="col-lg">
                         <div class="section-title mb-40 wow fadeInUp text-center">
@@ -681,208 +579,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="row align-items-center">
-                        <div class="col-lg-5">
-                            <div class="img-holder mb-55 wow fadeInLeft">
-                                <img src="assets/images/testimonial/img-2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="text-wrapper wow fadeInRight">
-                                <div class="testimonial-slider-two mb-55">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <div class="quote-rating d-flex justify-content-between align-items-center">
-                                                <div class="quote">
-                                                    <i class="flaticon-quotation"></i>
-                                                </div>
-                                                <ul class="ratings">
-                                                    <li><span>Best Quality</span></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                            <h3>Sit amet consecte adipiscing
-                                                elit sed do eiusmod temporinc
-                                                idunt labore et dolore magnas aliqua. Quis ipsum susendise 
-                                                sltrices gravida. Risus commo
-                                                verra maece lacusvel. </h3>
-                                            <div class="author-title">
-                                                <h4>Dustin A. McPherson</h4>
-                                                <p class="position">Senior  Manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <div class="quote-rating d-flex justify-content-between align-items-center">
-                                                <div class="quote">
-                                                    <i class="flaticon-quotation"></i>
-                                                </div>
-                                                <ul class="ratings">
-                                                    <li><span>Best Quality</span></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                            <h3>Sit amet consecte adipiscing
-                                                elit sed do eiusmod temporinc
-                                                idunt labore et dolore magnas aliqua. Quis ipsum susendise 
-                                                sltrices gravida. Risus commo
-                                                verra maece lacusvel. </h3>
-                                            <div class="author-title">
-                                                <h4>Dustin A. McPherson</h4>
-                                                <p class="position">Senior  Manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <div class="quote-rating d-flex justify-content-between align-items-center">
-                                                <div class="quote">
-                                                    <i class="flaticon-quotation"></i>
-                                                </div>
-                                                <ul class="ratings">
-                                                    <li><span>Best Quality</span></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                            <h3>Sit amet consecte adipiscing
-                                                elit sed do eiusmod temporinc
-                                                idunt labore et dolore magnas aliqua. Quis ipsum susendise 
-                                                sltrices gravida. Risus commo
-                                                verra maece lacusvel. </h3>
-                                            <div class="author-title">
-                                                <h4>Dustin A. McPherson</h4>
-                                                <p class="position">Senior  Manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <div class="quote-rating d-flex justify-content-between align-items-center">
-                                                <div class="quote">
-                                                    <i class="flaticon-quotation"></i>
-                                                </div>
-                                                <ul class="ratings">
-                                                    <li><span>Best Quality</span></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                            <h3>Sit amet consecte adipiscing
-                                                elit sed do eiusmod temporinc
-                                                idunt labore et dolore magnas aliqua. Quis ipsum susendise 
-                                                sltrices gravida. Risus commo
-                                                verra maece lacusvel. </h3>
-                                            <div class="author-title">
-                                                <h4>Dustin A. McPherson</h4>
-                                                <p class="position">Senior  Manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="row">
-                        <div class="col-lg-12">
-                            <div class="testimonial-two-dots text-center"></div>
-                        </div>
-                    </div> -->
-                </div>
-            </section>
-            <!--====== End Testimonial Section ======-->
-
-            <!--====== Start Pricing Section ======-->
-            <!-- <section class="pricing-area pricing-area-v1">
-                <div class="container-1350">
-                    <div class="pricing-wrapper pt-75 pb-70">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-6">
-                                <div class="section-title text-center mb-55">
-                                    <h2>Pricing Package</h2>
-                                    <p>Professional Design Agency to provide solutions</p>
-                                </div>    
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="pricing-item pricing-item-one mb-40 wow fadeInUp">
-                                    <div class="pricing-head text-center">
-                                        <span class="plan">Basic Plan</span>
-                                        <h2 class="price"><span class="currency">$</span>16.95</h2>
-                                    </div>
-                                    <div class="pricing-body">
-                                        <p>Sit amet consectetur adiising seddo eiusmod teme</p>
-                                        <ul class="pricing-list">
-                                            <li class="check">Web Design</li>
-                                            <li class="check">Web Development</li>
-                                            <li class="check">SEO Optimizations</li>
-                                            <li class="uncheck">Online Support</li>
-                                            <li class="uncheck">Domain & Hosting</li>
-                                        </ul>
-                                        <a href="contact.html" class="main-btn arrow-btn">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="pricing-item pricing-item-one mb-40 wow fadeInUp">
-                                    <div class="ribbon">Popular</div>
-                                    <div class="pricing-head text-center">
-                                        <span class="plan">Standard Plan</span>
-                                        <h2 class="price"><span class="currency">$</span>46.95</h2>
-                                    </div>
-                                    <div class="pricing-body">
-                                        <p>Sit amet consectetur adiising seddo eiusmod teme</p>
-                                        <ul class="pricing-list">
-                                            <li class="check">Web Design</li>
-                                            <li class="check">Web Development</li>
-                                            <li class="check">SEO Optimizations</li>
-                                            <li class="check">Online Support</li>
-                                            <li class="check">Domain & Hosting</li>
-                                        </ul>
-                                        <a href="contact.html" class="main-btn arrow-btn">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="pricing-item pricing-item-one mb-40 wow fadeInUp">
-                                    <div class="pricing-head text-center">
-                                        <span class="plan">Silver Plan</span>
-                                        <h2 class="price"><span class="currency">$</span>96.95</h2>
-                                    </div>
-                                    <div class="pricing-body">
-                                        <p>Sit amet consectetur adiising seddo eiusmod teme</p>
-                                        <ul class="pricing-list">
-                                            <li class="check">Web Design</li>
-                                            <li class="check">Web Development</li>
-                                            <li class="check">SEO Optimizations</li>
-                                            <li class="check">Online Support</li>
-                                            <li class="check">Domain & Hosting</li>
-                                        </ul>
-                                        <a href="contact.html" class="main-btn arrow-btn">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section> -->
-            <!--====== End Pricing Section ======-->
+            <!--====== End Testimonial Section ======-->
 
             <!--====== Start Blog Section ======-->
             <!-- <section class="blog-area blog-area-v2 pt-130 pb-90">
@@ -929,7 +628,7 @@
             <!--====== End Blog Section ======-->
             
             <!--====== Start CTA Section ======-->
-            <section class="cta-area cta-area-v2 position-relative z-2 wow fadeInDown">
+            <section class="cta-area cta-area-v2 position-relative z-2 wow fadeInDown" id="contact">
                 <div class="container">
                     <div class="cta-wrapper">
                         <div class="row align-items-center">

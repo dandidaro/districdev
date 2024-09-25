@@ -1893,6 +1893,7 @@ button {
 
 .service-item{
     position: relative;
+    height: 100%;
     z-index: 1;
     padding: 40px 40px 40px 40px;
     border-radius: 7px;
@@ -1939,7 +1940,7 @@ button {
     color: var(--heading);
 }
 .service-item .text .list-style-two li{
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 /* .service-area-v1 .service-wrapper{
     padding-left: 15px;

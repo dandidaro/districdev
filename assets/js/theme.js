@@ -21,6 +21,7 @@
     ## Isotope JS
     ## wow JS
     ## Item Active
+    ## Contact Us Handler
 -----------------------------------------------------------------------------------*/
 
 (function($) {
@@ -325,7 +326,7 @@
     $("a.page-scroll").on('click', function (e) {
         e.preventDefault();
         var hash = this.hash;
-        var position = $(hash).offset().top - 50;
+        var position = $(hash).offset().top;
         $("html").animate({
             scrollTop : position
         },1000);
@@ -338,5 +339,4 @@
     $('.pricing-nav-tab a:first-child').click(function () {
         $(this).parent('.pricing-nav-tab').removeClass('for-year');
     });
-
 })(window.jQuery);
