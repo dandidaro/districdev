@@ -16,33 +16,39 @@
     $senderEmail = 'business@distric.studio';
     $senderPass = 'Gwyndolin69!';
 
+    $clientName = $_POST['name'];
+    $clientEmail = $_POST['email'];
+    $clientPhone = $_POST['phone'];
+    $clientSubject = $_POST['subject'];
+    $clientText = $_POST['message'];
+
     try {
         $mail->isSMTP();
-        $mail->Host = 'smtp.hostinger.com'; // Your SMTP server
+        $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
-        $mail->Username = $senderEmail; // Your Mailtrap username
-        $mail->Password = $senderPass; // Your Mailtrap password
+        $mail->Username = $senderEmail;
+        $mail->Password = $senderPass;
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
         // Sender and recipient settings
-        $mail->setFrom('info@mailtrap.io', 'Mailtrap');
-        $mail->addReplyTo('info@mailtrap.io', 'Mailtrap');
-        $mail->addAddress('dandidaro@gmail.com', 'Tim'); // Primary recipient
+        $mail->setFrom('business@distric.studio', 'no-reply Distric');
+        $mail->addReplyTo($clientEmail, $clientName);
+        $mail->addAddress('business@distric.studio', 'Business Distric Studio');
         
         // CC and BCC
         // $mail->addCC('cc1@example.com', 'Elena');
         // $mail->addBCC('bcc1@example.com', 'Alex');
 
-        // Adding more BCC recipients
-        // $mail->addBCC('bcc2@example.com', 'Anna');
-        // $mail->addBCC('bcc3@example.com', 'Mark');
-
         // Email content
-        $mail->isHTML(true); // Set email format to HTML
-        $mail->Subject = "PHPMailer SMTP test";
-        $mail->Body = '<h1>Send HTML Email using SMTP in PHP</h1><p>This is a test email I\'m sending using SMTP mail server with PHPMailer.</p>'; // Example HTML body
-        $mail->AltBody = 'This is the plain text version of the email content';
+        // Set email format to HTML
+        // $mail->isHTML(true); 
+        $mail->Subject = "New Opportunity from " . $clientName;
+        $mail->Body = 'Name: ' . $clientSubject . PHP_EOL .
+                      'Email: ' . $clientEmail . PHP_EOL .
+                      'Phone Number: ' . $clientPhone . PHP_EOL .
+                      'Subject/Project: ' . $clientSubject . PHP_EOL .
+                      'Message: ' . $clientText;
 
         if(!$mail->send()) {
             echo 'Message could not be sent.';
