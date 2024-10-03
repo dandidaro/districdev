@@ -340,3 +340,21 @@
         $(this).parent('.pricing-nav-tab').removeClass('for-year');
     });
 })(window.jQuery);
+
+function loading() {
+    var form = document.querySelector('#form-contact')
+    form.addEventListener('invalid', formInvalid, true)
+    form.addEventListener('submit', formValid)
+}
+
+function formValid(event){
+    // event.preventDefault();
+    $(".main-btn .fa-spinner").show();
+    $(".main-btn .btn-text").html("Sending...");
+}
+
+function formInvalid(event){
+    // event.preventDefault();
+    $(".main-btn .fa-spinner").hide();
+    $(".main-btn .btn-text").html("Send us Message");
+}

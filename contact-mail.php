@@ -54,7 +54,10 @@
             echo 'Message could not be sent.';
             echo 'Mailer Error: ' . $mail->ErrorInfo;
         } else {
-            echo 'Message has been sent';
+            // echo 'Message has been sent';
+            echo '<div class="modal-dialog modal-dialog-centered">
+                ...
+                </div>'
         }
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
