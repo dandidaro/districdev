@@ -3,17 +3,17 @@
     use PHPMailer\PHPMailer\Exception;
 
     /* Exception class. */
-    require './assets/vendor/PHPMailer/src/Exception.php';
+    require '../assets/vendor/PHPMailer/src/Exception.php';
 
     /* The main PHPMailer class. */
-    require './assets/vendor/PHPMailer/src/PHPMailer.php';
+    require '../assets/vendor/PHPMailer/src/PHPMailer.php';
 
     /* SMTP class, needed if you want to use SMTP. */
-    require './assets/vendor/PHPMailer/src/SMTP.php';
+    require '../assets/vendor/PHPMailer/src/SMTP.php';
 
     $mail = new PHPMailer(true); // Passing `true` enables exceptions
 
-    $senderEmail = 'business@distric.studio';
+    $senderEmail = 'info@distric.studio';
     $senderPass = 'Gwyndolin69!';
 
     $clientName = $_POST['name'];
@@ -32,9 +32,9 @@
         $mail->Port = 465;
 
         // Sender and recipient settings
-        $mail->setFrom('business@distric.studio', 'no-reply Distric');
+        $mail->setFrom('dandidaro@gmail.com', 'no-reply distric');
         $mail->addReplyTo($clientEmail, $clientName);
-        $mail->addAddress('business@distric.studio', 'Business Distric Studio');
+        $mail->addAddress('business@distric.studio', 'Distric Studio - Business');
         
         // CC and BCC
         // $mail->addCC('cc1@example.com', 'Elena');
@@ -51,16 +51,14 @@
                       'Message: ' . $clientText;
 
         if(!$mail->send()) {
-            echo 'Message could not be sent.';
-            echo 'Mailer Error: ' . $mail->ErrorInfo;
+            // echo 'Message could not be sent.';
+            header("Location: ../contact/failed.html");
         } else {
             // echo 'Message has been sent';
-            echo '<div class="modal-dialog modal-dialog-centered">
-                ...
-                </div>'
+            header("Location: ../contact/success.html");
         }
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        header("Location: ../contact/failed.html");
     }
 
 ?>

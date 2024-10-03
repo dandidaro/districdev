@@ -9,13 +9,13 @@
         <!--====== Title ======-->
         <title>Contact - Distric Studio</title>
         <!--====== Favicon Icon ======-->
-        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+        <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
         <!--====== Default css ======-->
-        <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="../assets/css/default.css">
         <!--====== Style css ======-->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
         <!--====== Responsive css ======-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
     </head>
     <body>
         <div class="gradient-body">
@@ -36,7 +36,7 @@
                     <div class="container-fluid">
                         <div class="primary-menu">
                             <div class="site-branding">
-                                <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo-draft.png" alt="Site Logo"></a>
+                                <a href="index.html" class="brand-logo"><img src="../assets/images/logo/logo-draft.png" alt="Site Logo"></a>
                             </div>
                             <div class="nav-menu nav-ml-auto">
                                 <!-- Navbar Close -->
@@ -71,11 +71,11 @@
                                                 </li>
                                             </ul>
                                         </li> -->
-                                        <li class="menu-item"><a href="index.html" class="nav-link">Home</a></li>
-                                        <li class="menu-item"><a href="index.html#services" class="nav-link">Services</a></li>
-                                        <li class="menu-item"><a href="index.html#works" class="nav-link">Works</a></li>
+                                        <li class="menu-item"><a href="../#home" class="nav-link">Home</a></li>
+                                        <li class="menu-item"><a href="../#services" class="nav-link">Services</a></li>
+                                        <li class="menu-item"><a href="../#works" class="nav-link">Works</a></li>
                                         <!-- <li class="menu-item"><a href="#about" class="page-scroll nav-link">About Us</a></li> -->
-                                        <li class="menu-item"><a href="index.html/contact.html" class="active nav-link">Contact Us</a></li>
+                                        <li class="menu-item"><a href="../contact" class="active nav-link">Contact Us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -119,11 +119,11 @@
                 </div>
             </section> -->
             <!--====== End Page-banner section ======-->
-            
+
             <!--====== Start Contact section ======-->
             <section class="contact-area contact-area-v3 pt-120 pb-120">
                 <div class="container-1350">
-                    <div class="contact-wrapper pt-80 pb-80 wow fadeInUp">
+                    <div class="contact-wrapper pb-40 wow fadeInUp">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
@@ -133,46 +133,42 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="alert alert-primary alert-dismissible text-center" data-wow-delay="1s" role="alert" style="display: none;">
+                                Your email has been sent!
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="contact-form">
-                                        <form method="post" action="contact-mail.php" id="form-contact">
+                                        <form method="post" action="../form/" id="form-contact">
                                             <div class="row">
                                                 <div class="col-lg-4">
                                                     <div class="form_group">
                                                         <input type="text" class="form_control" placeholder="Full Name" name="name" required>
                                                     </div>
-                                                </div>
-                                                <div class="col-lg-4">
                                                     <div class="form_group">
                                                         <input type="email" class="form_control" placeholder="Email Address " name="email" required>
                                                     </div>
-                                                </div>
-                                                <div class="col-lg-4">
                                                     <div class="form_group">
                                                         <input type="tel" class="form_control" placeholder="Phone Number" name="phone" required>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-12">
+                                                <div class="col-lg-8">
                                                     <div class="form_group">
                                                         <input type="text" class="form_control" placeholder="Subject" name="subject" required>
                                                     </div>
-                                                </div>
-                                                <div class="col-lg-12">
                                                     <div class="form_group">
                                                         <textarea class="form_control" placeholder="Write Message" name="message"></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="form_group text-center">
-<<<<<<< Updated upstream
-                                                        <button class="main-btn" type="submit">Send Us Message</button>
-=======
                                                         <button class="main-btn" type="submit" onclick="loading()">
                                                             <i class="fas fa-spinner fa-spin" style="margin-right: 10px; display: none;"> </i>
-                                                            <span class="btn-text">Send Your Message</span>
+                                                            <span class="btn-text">Send Us Message</span>
                                                         </button>
->>>>>>> Stashed changes
                                                     </div>
                                                 </div>
                                             </div>
@@ -201,7 +197,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="button-box float-lg-right">
-                                    <a href="index.html#works" class="main-btn bordered-btn btn-white">See Portfolios</a>
+                                    <a href="../#works" class="main-btn bordered-btn btn-white">See Portfolios</a>
                                 </div>
                             </div>
                         </div>
@@ -248,9 +244,9 @@
                                 <div class="widget footer-nav-widget mb-40 wow fadeInUp" data-wow-delay=".15s">
                                     <h4 class="widget-title">Services</h4>
                                     <ul class="widget-nav">
-                                        <li><a href="services.html">Product Design</a></li>
-                                        <li><a href="services.html">Product Development</a></li>
-                                        <li><a href="services.html">Graphic Design</a></li>
+                                        <li><a href="#services" class="page-scroll">Product Design</a></li>
+                                        <li><a href="#services" class="page-scroll">Product Development</a></li>
+                                        <li><a href="#services" class="page-scroll">Graphic Design</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -258,9 +254,9 @@
                                 <div class="widget footer-nav-widget mb-40 wow fadeInUp" data-wow-delay=".20s">
                                     <h4 class="widget-title">Links</h4>
                                     <ul class="widget-nav">
-                                        <li><a href="about.html">Who are we?</a></li>
-                                        <li><a href="team.html">The Dream Team</a></li>
-                                        <li><a href="projects.html">Our Works</a></li>
+                                        <li><a href="#services" class="page-scroll">Services</a></li>
+                                        <li><a href="#works" class="page-scroll">Works</a></li>
+                                        <li><a href="./contact">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -268,9 +264,10 @@
                                 <div class="widget social-widget mb-40 wow fadeInUp" data-wow-delay=".25s">
                                     <h4 class="widget-title">Social Medias</h4>
                                     <ul class="social-nav">
-                                        <li><a href="#"><i class="fab fa-dribbble"></i>Dribbble</a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                                        <!-- <li><a href="#"><i class="fab fa-dribbble"></i>Dribbble</a></li> -->
+                                        <li><a href="https://instagram.com/distric.studio"><i class="fab fa-instagram"></i>Instagram</a></li>
+                                        <li><a href="https://www.linkedin.com/company/distric-studio"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                                        <!-- <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li> -->
                                         <!-- <li><a href="#"><i class="fab fa-behance"></i>Behance</a></li> -->
                                         <!-- <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li> -->
                                         <!-- <li><a href="#"><i class="fab fa-medium-m"></i>Medium</a></li> -->
@@ -305,30 +302,30 @@
         <!--====== back-to-top ======-->
         <a href="#" class="back-to-top" ><i class="far fa-angle-up"></i></a>
         <!--====== Jquery js ======-->
-        <script src="assets/vendor/jquery-3.6.0.min.js"></script>
+        <script src="../assets/vendor/jquery-3.6.0.min.js"></script>
         <!--====== Bootstrap js ======-->
-        <script src="assets/vendor/popper/popper.min.js"></script>
+        <script src="../assets/vendor/popper/popper.min.js"></script>
         <!--====== Bootstrap js ======-->
-        <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
         <!--====== Slick js ======-->
-        <script src="assets/vendor/slick/slick.min.js"></script>
+        <script src="../assets/vendor/slick/slick.min.js"></script>
         <!--====== Magnific js ======-->
-        <script src="assets/vendor/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../assets/vendor/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <!--====== Isotope js ======-->
-        <script src="assets/vendor/isotope.min.js"></script>
+        <script src="../assets/vendor/isotope.min.js"></script>
         <!--====== Imagesloaded js ======-->
-        <script src="assets/vendor/imagesloaded.min.js"></script>
+        <script src="../assets/vendor/imagesloaded.min.js"></script>
         <!--====== Counterup js ======-->
-        <script src="assets/vendor/jquery.counterup.min.js"></script>
+        <script src="../assets/vendor/jquery.counterup.min.js"></script>
         <!--====== Waypoints js ======-->
-        <script src="assets/vendor/jquery.waypoints.js"></script>
+        <script src="../assets/vendor/jquery.waypoints.js"></script>
         <!--====== Nice-select js ======-->
-        <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="../assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
         <!--====== WOW js ======-->
-        <script src="assets/vendor/wow.min.js"></script>
+        <script src="../assets/vendor/wow.min.js"></script>
         <!--====== Parallax js ======-->
-        <script src="assets/vendor/parallax.min.js"></script>
+        <script src="../assets/vendor/parallax.min.js"></script>
         <!--====== Main js ======-->
-        <script src="assets/js/theme.js"></script>
+        <script src="../assets/js/theme.js"></script>
     </body>
 </html>
