@@ -32,7 +32,7 @@
         $mail->Port = 465;
 
         // Sender and recipient settings
-        $mail->setFrom('dandidaro@gmail.com', 'no-reply distric');
+        $mail->setFrom('info@distric.studio', 'no-reply distric');
         $mail->addReplyTo($clientEmail, $clientName);
         $mail->addAddress('business@distric.studio', 'Distric Studio - Business');
         
