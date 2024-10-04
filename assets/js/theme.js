@@ -108,8 +108,10 @@
         var scroll = $(window).scrollTop();
         if (scroll < 100) {
             $(".header-navigation").removeClass("sticky");
+            $(".header-navigation").removeClass("background-blur");
         } else {
             $(".header-navigation").addClass("sticky");
+            $(".header-navigation").addClass("background-blur");
         }
     });
 
