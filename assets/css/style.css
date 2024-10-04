@@ -244,8 +244,9 @@ ul.social-link li{
     margin-bottom: 22px;
 }
 .section-title p{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
+    color: #363638;
 }
 .section-title-white .st-one:after{
     background: url(../images/border-2.png) no-repeat bottom;
